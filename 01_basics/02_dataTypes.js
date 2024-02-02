@@ -38,9 +38,10 @@ let isLoggedIn = false
 
 // object
 
-console.log(typeof undefined)  // undefined
-console.log(typeof null)    // object
-console.log(typeof BigInt)  // function
+// console.log(typeof undefined)  // undefined
+// console.log(typeof null)    // object
+// console.log(typeof BigInt)  // function / bigInt
+
 
 
 // undefined apne aaap me ak type h     
