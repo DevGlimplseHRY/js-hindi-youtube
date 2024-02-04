@@ -29,3 +29,39 @@
 // }
 // console.log(typeof myFunction)               // --   typeof specifies [return]/result type 
 // console.log(myFunction)
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//          Memory
+
+// Stack            and             Heap 
+
+
+// Stack (Primitive)            Heap (Non-Primitive)
+
+
+// Call by VALUE                // Call by REFERENCE    
+
+let myYoutubeChannel = "hiteshchoudharydotcom"
+let anotherYoutubeChannel = myYoutubeChannel ;
+
+anotherYoutubeChannel = "ishabdhillondotcom"
+// console.log(myYoutubeChannel);
+// console.log(anotherYoutubeChannel);
+
+
+let userOne = {
+    email : "hitesh@google.com",
+    upiId : "ishab@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "ishab@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// c:\Users\ishab\OneDrive\Documents\Stack & Heap in JavaScript.png
