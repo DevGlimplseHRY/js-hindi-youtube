@@ -1,0 +1,3 @@
+if we try to access the invalid index value of array in JavaScript then it will give 'undefined' rather than 'index out of bound error'.
+Check out this picture about Strings =>   c:\Users\ishab\OneDrive\Pictures\Screenshots\Screenshot 2024-02-07 191246.png
+How u can say Array is an object ?
