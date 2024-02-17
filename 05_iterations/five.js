@@ -36,5 +36,6 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
+    // console.log(item)
     console.log(item.languageFileName);
 })
