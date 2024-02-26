@@ -24,37 +24,37 @@ const JsUser = {
     lastLoginDays : ["Monday","Saturday"]
 }
 
-console.log(JsUser.email);
-console.log(JsUser["email"]);
-console.log(JsUser["full name"]);
-console.log(JsUser["full name"])
-console.log(mySym);         // can't use string interpolation for Symbol
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["full name"]);
+// console.log(JsUser["full name"])
+// console.log(mySym);         // can't use string interpolation for Symbol
 
-console.log(mySym);
-console.log(JsUser["mySym"]);    // wrong way to access Symbol from object
-console.log(JsUser[mySym]);
-console.log(typeof JsUser[mySym]);
-console.log(typeof mySym)
-console.log(JsUser);
+// console.log(mySym);
+// console.log(JsUser["mySym"]);    // wrong way to access Symbol from object
+// console.log(JsUser[mySym]);
+// console.log(typeof JsUser[mySym]);
+// console.log(typeof mySym)
+// console.log(JsUser);
 
 /* InterView question : ak symbol declare krna h & usko object me keys ki trh act krna h and print krna h */
 
-JsUser.email = "ishab@chatGpt.com";
-Object.freeze(JsUser)
-JsUser.age = 33;
-JsUser.email = "ishab@microsoft.com";
-console.log(JsUser);
+// JsUser.email = "ishab@chatGpt.com";
+// Object.freeze(JsUser)
+// JsUser.age = 33;
+// JsUser.email = "ishab@microsoft.com";
+// console.log(JsUser);
 
-JsUser.greeting = function (){
-    console.log(`Hello JS User`);
-}
+// JsUser.greeting = function (){
+//     console.log(`Hello JS User`);
+// }
 
 JsUser.greetingTwo = function(){
     console.log(`Hello JS User , ${this.age}`)
 }
-console.log(JsUser.greeting);
+// console.log(JsUser.greeting);
 console.log();
-console.log(JsUser.greeting());
+// console.log(JsUser.greeting());
 console.log();
-console.log(JsUser.greetingTwo);
-console.log(JsUser.greetingTwo());
+// console.log(JsUser.greetingTwo);             // it show  [Function  (anonymous)]         in terminal after run it.
+console.log(JsUser.greetingTwo());              // it works as it is asked   but  print/give/show/return  undefined also in next line.
