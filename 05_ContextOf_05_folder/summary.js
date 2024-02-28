@@ -188,10 +188,10 @@ const shoppingCart = [{
 }
 ]
 
-let Price = 0
+let initialTotalPrice = 0
 // for (const iterator of shoppingCart) {
-//     totalPrice += iterator.price
+//     initialTotalPrice += iterator.price
 // }
 
-const totalPrice = shoppingCart.reduce( (acc,item) => (acc + item.price),Price)
+const totalPrice = shoppingCart.reduce( (acc,item) => (acc + item.price),initialTotalPrice)
 console.log(totalPrice)
