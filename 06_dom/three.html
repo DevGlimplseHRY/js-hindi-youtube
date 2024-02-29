@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Chai aur code</title>
+    <style>
+      .bg-black{
+        background-color: #212121;
+        color:#ffff;
+      } 
+    </style>
+</head>
+<body class="bg-black">
+
+</body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute('title','generated title')
+    div.style.backgroundColor = 'green'
+    div.style.padding = '12px'
+
+    // div.innerText = "Chai aur code"      // 1 way to set text
+    const addText = document.createTextNode("Chai aur code")    // 2nd way to set text
+    div.appendChild(addText)
+
+    document.body.appendChild(div);
+</script>
+</html>
