@@ -6,7 +6,7 @@
 
 # Solution code
 
-## project 1
+## Project 1 
 ```
 console.log("ishab")
 
@@ -36,7 +36,7 @@ buttons.forEach( function (button) {
 })
 ```
 
-## project 2 solution
+## Project 2
 
 ```javascript
 const form = document.querySelector("form")
@@ -72,7 +72,7 @@ form.addEventListener('submit', function(e){
 })
 ```
 
-## project 3 solution code
+## Project 3
 
 ```javascript
 const clock = document.getElementById('clock')
@@ -84,7 +84,7 @@ setInterval(function(){
 },1000)
 ```
 
-## project 4 solution
+## Project 4
 
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1)
@@ -166,4 +166,62 @@ function newGame(){
     playGame = true
   })
 }
+```
+
+
+## Project 5
+
+```
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+      <div class='color'>
+      <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? "Space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+      </div>
+    `;
+});
+```
+
+## Project 6
+```
+const start = document.querySelector('#start');
+const stop  = document.querySelector('#stop');
+const randomColor = function(){
+  const hex = '0123456789ABCDEF'
+  let color = '#';
+  for(let i = 0 ; i <= 5 ; i++){
+    color += hex[Math.floor(Math.random() * 16)]
+  }
+  return color;
+}
+
+let intervalId ;
+const startChangingColor = function(){
+  if(!intervalId){
+  intervalId = setInterval(changeBgColor,2000);
+  }
+  function changeBgColor(){
+  document.body.style.backgroundColor = randomColor();
+  }
+};
+
+const stopChangingColor = function(){
+  clearInterval(intervalId);
+  intervalId = null ;
+};
+
+start.addEventListener('click',startChangingColor);
+stop.addEventListener('click' ,stopChangingColor);
 ```
