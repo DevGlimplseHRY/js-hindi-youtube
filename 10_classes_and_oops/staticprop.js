@@ -13,6 +13,7 @@ class User {
 
 const hitesh = new User('hitesh');
 // console.log(hitesh.createId())
+// console.log(User.createId())
 
 class Teacher extends User {
     constructor(username,email){
@@ -23,4 +24,4 @@ class Teacher extends User {
 
 const iphone = new Teacher('iphone','iphone@example.com')
 iphone.logMe()
-console.log(iphone.createId())
+// console.log(iphone.createId())
